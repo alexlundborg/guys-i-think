@@ -97,7 +97,8 @@
             transform: translateY(0);
         }
 
-        .narrative p:first-of-type::first-letter {
+        /* Drop cap only on second paragraph (first prose paragraph, not the opening dialogue) */
+        .narrative p:nth-of-type(2)::first-letter {
             font-size: 3rem;
             float: left;
             line-height: 1;
@@ -221,19 +222,33 @@
     </section>
 
     <section class="narrative" id="part1">
-        <p>"I can recover it."</p>
+        <p>"...we can get it back."</p>
 
-        <p>Sarai's hand hovers at the whiteboard, the marker trembling slightly. The equation she's just written—a cascade of tensor operations folded into recursive error-correction matrices—sits there like something unearthed. Chen's coffee cup stops halfway to his mouth. Through the dome's triple-paned silicate, the twin moons hang motionless, one rust-colored, one pale as bone.</p>
+        <p>Sarai stood at the whiteboard, marker still in hand, her other hand frozen mid-gesture like she'd forgotten it was there. "The corruption. It's not degradation, it's—Chen, pull up the emission curve from the supergiant. The full two hundred years."</p>
 
-        <p class="dialogue">"The radiation didn't just corrupt the key," she says, turning. Her eyes have that wide, almost frightened look of someone watching dominoes fall. "It introduced a pattern. Chaotic, yes, but not random. There's a—" She circles three variables on the board. "The decay follows the inverse of the stellar emission curve. We have <em>those</em> measurements. We've had them for two hundred years."</p>
+        <p>Chen set down his coffee. "Which band?"</p>
 
-        <p>Marcus removes his glasses, polishes them on his sleeve—a nervous habit from when he still needed them—and puts them back on. <span class="dialogue">"You're saying the damage itself is the map."</span> His voice is careful, the way you'd touch something that might shatter.</p>
+        <p>"All of them. Overlay them."</p>
 
-        <p class="dialogue">"Not a map. A shadow."</span> Sarai's marker squeaks against the board, sketching waveforms that intersect and diverge. <span class="dialogue">"If we can model the particle stream's precise trajectory, the quantum decoherence pattern becomes invertible. The decay is time-stamped in the damage itself."</span> She hesitates. <span class="dialogue">"Theoretically."</span></p>
+        <p>The holoscreen bloomed to life, cascades of data painting the air in amber and blue. Marcus leaned forward, glasses sliding down his nose. "Oh, you're kidding me."</p>
 
-        <p>They all know what happened the last time someone said <em>theoretically</em> about the encryption. What was lost. What was unleashed. Why they encrypt at all.</p>
+        <p>"It's inverse," Sarai said, and her voice had gone quiet in that way it did when she was either completely wrong or completely right. "Look at the decay pattern in the key—it's not random. It's the <em>inverse</em> of the stellar output curve. The radiation didn't just damage it, it transformed it. We have the transformation."</p>
 
-        <p>The silence that follows isn't doubt. It's the sensation of standing at a cliff's edge, looking down at the only path forward. Beneath the research facility, in shielded vaults three hundred meters down, the corrupted archive waits. Eleven thousand years of accumulated understanding, locked behind mathematics that was supposed to be eternal. Chen sets down his cup.</p>
+        <p>"So we reverse it," Chen said slowly. Then, faster: "We reverse it. We have the measurements. Sarai, we have <em>all</em> the measurements."</p>
+
+        <p>"If the model holds," Marcus said. He was cleaning his glasses now, compulsive. "If we're right about the emission mechanism. If there aren't secondary interactions we haven't—"</p>
+
+        <p>"There's always something we haven't accounted for," Sarai interrupted. "But we've been tracking that star for two centuries <em>because</em> our predecessors knew to care about this stuff. They gave us this. The data's clean."</p>
+
+        <p>Chen was already running simulations, fingers dancing through the projection. "Okay. Okay, if this works, we get the oracle back online. If it fails halfway through..." He stopped.</p>
+
+        <p>"If it fails, we corrupt what's left," Marcus finished. "We get one shot."</p>
+
+        <p>The room went quiet except for the soft hum of the simulation arrays. Through the window, both moons hung in the afternoon sky, one a thin crescent, one nearly full. Somewhere out there, forty-three light-years away, a dying star was still screaming radiation into the void, utterly indifferent to what it had broken here.</p>
+
+        <p>"We don't have a choice," Sarai said. "Climate optimizations are already drifting outside safe parameters. We've got, what, eighteen months before we're making decisions we're not equipped to make?"</p>
+
+        <p>"Sixteen," Chen said quietly. "Possibly less."</p>
     </section>
 
     <section class="scene-image">
@@ -245,15 +260,23 @@
     </section>
 
     <section class="narrative" id="part2">
-        <p>Dr. Kim Jae-won's footsteps are soft against the polished stone floor, but they all turn. He's wearing the gray cardigan he favors during the night shifts, the one with stretched pockets from decades of holding his hands just like this. His eyes go to the whiteboard first—they always do—and he reads the equations the way some people read poetry. His head tilts, and the corner of his mouth lifts.</p>
+        <p>Dr. Kim arrived without fanfare, just the <em>snick</em> of the door and the shuffle of his shoes. He was seventy-eight and still arrived before everyone else most mornings. Now he stood in front of the whiteboard, reading Sarai's equations with his head tilted like he was listening to music.</p>
 
-        <p class="dialogue">"You found the invariant,"</span> he says. Not a question. He steps closer, one finger tracing the air near Sarai's tensor cascade without quite touching the board. <span class="dialogue">"Elegant. And dangerous."</span> The word sits there between them. He's older than any of them by decades, old enough to have studied under someone who studied under someone who remembered the Before Times. Who knew why they started encrypting in the first place.</p>
+        <p>"The inverse transform," he said after a moment. It wasn't a question.</p>
 
-        <p>Chen is already running preliminary simulations, fingers dancing across the projection field. Sarai hasn't moved from the whiteboard. <span class="dialogue">"The error margins are..."</span> she begins.</p>
+        <p>"Yes," Sarai said.</p>
 
-        <p><span class="dialogue">"Narrow,"</span> Kim finishes. <span class="dialogue">"They would have to be."</span> He looks at each of them in turn, and something passes across his face—not quite pride, not quite sorrow. <span class="dialogue">"You understand what you're proposing. The cascade risk if the reconstruction is incomplete."</span> He gestures toward the window, toward the moons and the darkness between stars. <span class="dialogue">"But also what we lose if we don't try."</span></p>
+        <p>He nodded once, then turned to Chen's simulations. Watched them cycle through iteration after iteration, probability clouds condensing and scattering. "The stellar data will hold," he said. "We calibrated those sensors myself, back when I had better knees. They're good."</p>
 
-        <p>The twin moons continue their ancient rotation. Somewhere in the vault below, information that predates their civilization's first cities waits in its corrupted state, neither accessible nor quite lost. In the reflection on the dome's inner surface, five figures gather around a whiteboard covered in mathematics that might—<em>might</em>—be salvation. The night shift has four more hours. They're all still standing.</p>
+        <p>"It's still a gamble," Marcus said.</p>
+
+        <p>"Everything is." Dr. Kim pulled up a chair, settling in with the particular solidity of someone who'd made hard decisions before. "But it's a good gamble. Better than waiting for the climate models to drift until we can't fix them without the very tool we've lost." He looked at each of them in turn. "You're sure about the emission curve correlation?"</p>
+
+        <p>"Ninety-three percent confidence," Chen said. "With the full dataset."</p>
+
+        <p>Dr. Kim smiled faintly. "Our predecessors were very thorough people." He stood, moved to the whiteboard, picked up a marker. "Show me your error bounds. Let's see if we can do better than one shot."</p>
+
+        <p>Outside, the twin moons continued their slow dance. Inside, the work began.</p>
     </section>
 
     <section class="ending">
