@@ -1,0 +1,287 @@
+CHAPTER 2: First Light
+
+Sarai stood at the whiteboard, marker cap between her teeth, staring at the equation she'd just written. "Okay, so if the particle flux peaked here—" she tapped the board "—and the rotation happened over this eight-minute window, we're looking at maybe thirty-two discrete impact events."
+
+"Thirty-four," Chen said from her laptop, not looking up. "Your third sigma's off."
+
+"Right. Thirty-four." Sarai corrected it. "Which means we need to model each one as a potential bit-flip candidate."
+
+Marcus adjusted his glasses, leaning over Chen's shoulder to see her screen. "That's... a lot of permutations."
+
+"It's tractable," Chen said. "Barely. We'll need to prioritize the high-probability impacts first."
+
+Dr. Kim sat in the corner, hands folded, watching them work. He hadn't said much since they'd started, just offered the occasional nod or hum of acknowledgment. Sarai appreciated that. They needed to think, not be coached.
+
+Adaeze came back from the archive room with a tablet. "Got the magnetosphere readings from that day. There was a minor fluctuation about four minutes into the window—could've weakened the shielding by another seven percent."
+
+"Seven percent," Marcus repeated, updating his notes. "That shifts the probability distribution."
+
+"Not by much," Chen said. "But yeah, we should factor it in."
+
+They worked for another hour, building their model. It was meticulous work—cross-referencing radiation data with timing logs, calculating particle trajectories, estimating which bits in the key structure were most likely to have been hit. The kind of work you couldn't rush.
+
+Finally, Chen sat back. "Okay. I think we have something."
+
+Sarai felt her heart rate pick up. "Yeah?"
+
+"Eighty-seven percent confidence on the first twelve bits. Sixty-two percent on the next eight. After that it gets messy, but we can make educated guesses."
+
+"How educated?" Marcus asked.
+
+"Educated enough to try." Chen cracked her knuckles. "We've got the attempt budget. Might as well use it."
+
+They assembled in front of the terminal—an old, reliable machine that had been serving the Council for decades. Nothing fancy, nothing that could fail in interesting ways. Sarai typed in the reconstructed key, each character feeling like a small betrayal of how certain they weren't.
+
+"Ready?" she asked.
+
+"Go for it," Chen said.
+
+Marcus just nodded.
+
+Sarai hit enter.
+
+The screen blinked. Processing. The Oracle's authentication system ran through its checks, querying the cryptographic signature, comparing it against its internal records.
+
+Then: AUTHENTICATION FAILED. ATTEMPT 1 OF 7 REMAINING.
+
+"Damn," Adaeze muttered.
+
+Sarai exhaled slowly. She'd expected this—first attempts rarely worked—but hope was hard to kill entirely.
+
+"Pull the diagnostic log," Dr. Kim said quietly. "See what it tells you."
+
+Chen was already on it, her fingers flying across the keyboard. The log was cryptic, but not useless. "Okay, so... it rejected the key at the fourth validation layer. That means the first three layers passed."
+
+"First three layers," Marcus repeated, writing it down. "That's actually good news."
+
+"It is?"
+
+"It means we got the high-confidence bits right. The failure happened deeper in." He adjusted his glasses, a quick nervous gesture. "We can narrow the problem space."
+
+Sarai looked at the diagnostic output, comparing it to their model. "If it failed at layer four, that's... what, bits thirty through sixty-five?"
+
+"Roughly," Chen said. "Give or take. The layers don't map cleanly to bit positions, but yeah, that's the neighborhood."
+
+Dr. Kim stood, walking over to the whiteboard. He picked up a marker and drew a simple bracket around a section of Sarai's equation. "This region. The flux was turbulent here. You may have underestimated the secondary scatter."
+
+Sarai studied it. "You think the radiation bounced?"
+
+"Possibly. The shielding geometry during the update—check the maintenance logs. They may have had panels removed."
+
+Adaeze was already pulling up the records. "Yeah, here. Two panels on the western array were offline for thermal recalibration."
+
+"There's your scatter path," Dr. Kim said. "Particles that should have been blocked got through at an angle."
+
+Chen swore under her breath. "That changes everything."
+
+"Not everything," Marcus said. "Just the middle bits. We keep the first three layers locked in and rework the scatter model."
+
+Sarai capped the marker, feeling the weight settle in her chest. Not defeat—not yet. But not victory either. "Okay," she said. "Let's run it again."
+
+They had six attempts left.
+
+
+CHAPTER 3: Margins
+
+The second attempt failed at layer five.
+
+"Progress," Chen said, though her voice had an edge now. She'd been running simulations for six hours straight, and the coffee was starting to lose the fight.
+
+"Incremental progress," Marcus corrected, scribbling notes. "We're confirming the structure, but we're not there yet."
+
+Sarai stared at the diagnostic log, trying to will it into making sense. The Oracle's authentication system was elegant—mathematically beautiful, even—but its failure modes were maddeningly opaque. Each rejection gave them a little information, but not enough. Never quite enough.
+
+"Third attempt ready," Adaeze said from her terminal. She'd taken over the reconstruction work for the scatter model, correlating the removed shielding panels with particle trajectories. It was tedious, detail-oriented work, and she'd been at it with a focus that Sarai envied.
+
+"What's the confidence?" Sarai asked.
+
+"Seventy-one percent on the middle bits now. Better than before, but not great."
+
+"Great doesn't exist," Chen said. "We work with what we have."
+
+They ran the third attempt. It failed at layer five again, but in a different way—the diagnostic codes were slightly different, suggesting they'd gotten closer but overcorrected.
+
+"Too much scatter," Marcus said, adjusting his glasses. "We're overweighting the deflection angle."
+
+"Or underweighting the absorption," Adaeze countered. "Some of those particles wouldn't have made it through at all."
+
+"Can we test that?" Sarai asked.
+
+Chen pulled up a simulation window. "Give me ten minutes."
+
+While Chen worked, Sarai's tablet chimed. A message from the Council liaison: Plan B team requesting status update. Lockdown protocol draft under review.
+
+She showed it to Dr. Kim, who read it without expression. "They're moving forward," he said.
+
+"We knew they would."
+
+"Doesn't mean I have to like it." He glanced at the team, all bent over their screens. "How are they holding up?"
+
+Sarai considered. "Chen's tired. Marcus is anxious. Adaeze is... Adaeze."
+
+"And you?"
+
+"I'm fine."
+
+Dr. Kim gave her a look that said he didn't believe her, but he didn't push. "The lockdown won't happen overnight. We still have time."
+
+"How much?"
+
+"Enough."
+
+It wasn't a real answer, but Sarai took it anyway.
+
+Chen's simulation finished. "Okay, new model. We're scaling back the scatter contribution by fifteen percent and tightening the error margins on the direct-impact bits."
+
+"Confidence?" Marcus asked.
+
+"Sixty-eight percent."
+
+Worse than before. Sarai felt something twist in her stomach. "Why'd it go down?"
+
+"Because I'm being honest about the uncertainty now," Chen said flatly. "We were overconfident before. This is more accurate, even if it's less pretty."
+
+Adaeze nodded slowly. "I buy it. The scatter model was always shaky."
+
+"So we go with the less-shaky version," Sarai said. "Agreed?"
+
+They agreed.
+
+The fourth attempt failed at layer six. Deeper than before, but still not through.
+
+"Four down," Marcus said quietly. "Three left."
+
+The room felt heavier after that. Not panic—none of them were panicking—but the margins were narrowing. Each attempt gave them data, but data had diminishing returns. They were learning, yes, but learning wasn't the same as solving.
+
+Adaeze broke the silence. "When I was a kid, my grandmother used to do these logic puzzles. The kind where you have a grid and you eliminate possibilities until you find the answer."
+
+"Okay?" Chen said.
+
+"She told me the secret wasn't being smart. It was being stubborn. You just keep crossing things off until only the truth is left."
+
+Marcus almost smiled. "Your grandmother sounds patient."
+
+"She was." Adaeze looked at the whiteboard, covered now with crossed-out equations and revised models. "I'm just saying. We're crossing things off. Eventually, there's nothing left to cross."
+
+"Assuming we have enough attempts," Chen said.
+
+"We do," Dr. Kim said, quiet but firm. "You've made more progress in three attempts than I expected. Keep going."
+
+Sarai wanted to believe him. The data said they were converging—each failure was closer, more precise. But close wasn't the same as correct, and precision didn't guarantee success.
+
+Still. They had three attempts left. And Adaeze was right: you keep crossing things off.
+
+"Okay," Sarai said. "Let's see what layer six can tell us."
+
+
+CHAPTER 4: Narrowing
+
+The fifth attempt failed at layer seven.
+
+One layer from the end. One layer from unlocking the Oracle and ending this whole crisis. One layer from success.
+
+Chen stared at the screen, her coffee long since gone cold. "This is ridiculous."
+
+"It's progress," Marcus said, but even he didn't sound convinced anymore.
+
+Sarai's tablet buzzed. Another Council update: Emergency session convened. Plan B lockdown protocol voted to provisional approval pending final review.
+
+She didn't tell the others. Not yet. They could see it on her face anyway.
+
+"How long do we have?" Adaeze asked.
+
+"Council meets for final vote in eight hours."
+
+"Eight hours," Chen repeated. "Two attempts left. Great odds."
+
+Dr. Kim walked to the whiteboard, studying their work. The models had gotten more complex with each iteration, layers of corrections and refinements stacked on top of each other. It looked like chaos, but Sarai knew better. It was progress. Messy, uncertain progress.
+
+"The last layer is always the hardest," Dr. Kim said. "Not because it's more complex. Because it's where all the previous uncertainties accumulate."
+
+"So what do we do?" Marcus asked.
+
+"You account for the accumulation." He tapped a section of equations. "Here. You've been treating each layer as independent, but they're not. Errors propagate. A small mistake in layer three becomes a larger mistake in layer seven."
+
+Sarai felt something click. "Error propagation. We've been modeling the radiation impacts in isolation, but the cryptographic system processes them sequentially."
+
+"Exactly." Dr. Kim handed her the marker. "Recalculate the later bits with the earlier errors factored in."
+
+They worked fast, rechecking their models with the new framework. Adaeze pulled up the validation algorithms, Chen rebuilt the simulation, Marcus cross-referenced the timing logs. It was the kind of frantic, focused work that only happened when you were running out of time and out of options.
+
+An hour later, they had a new key.
+
+"Confidence?" Sarai asked.
+
+Chen hesitated. "Seventy-four percent."
+
+"That's better than—"
+
+"No," Chen interrupted. "It's not. I'm less confident in the confidence. There are too many compounding variables now. This is a guess with math attached."
+
+Adaeze looked at her. "But it's our best guess."
+
+"It's our only guess."
+
+Marcus cleaned his glasses, a slow, deliberate motion. "We run it."
+
+Sarai typed in the key. Her hands were steady, which surprised her. She hit enter.
+
+The screen blinked. Processing. Validating. Layer one. Layer two. Layer three.
+
+They'd been here before.
+
+Layer four. Layer five. Layer six.
+
+Chen leaned forward.
+
+Layer seven.
+
+AUTHENTICATION FAILED. ATTEMPT 5 OF 7 REMAINING.
+
+"Damn it," Sarai whispered.
+
+The diagnostic log appeared. Chen pulled it up, scanning through the error codes. "Layer eight. We made it to layer eight."
+
+"One layer from the end," Marcus said.
+
+"One layer we don't understand."
+
+They sat in silence. Outside, the twin moons were rising over the city, pale crescents against the evening sky. Somewhere, the Council was debating the lockdown. Somewhere, the Plan B team was preparing for civilizational upheaval. And here, in this small room, three people and their mentor were staring at a problem that refused to be solved.
+
+Dr. Kim spoke first. "Layer eight is the final cryptographic seal. It's not just checking the key—it's checking the integrity of the checking process itself."
+
+"A meta-layer," Adaeze said.
+
+"Effectively. Which means the radiation didn't just corrupt the key. It corrupted the validation structure."
+
+Sarai felt the exhaustion creeping in now, the weight of failed attempts and narrowing options. "So we need to reconstruct not just what the key was, but how the system expected to validate it."
+
+"Yes."
+
+"With two attempts left."
+
+"Yes."
+
+Chen laughed, short and bitter. "Well. At least it's interesting."
+
+Marcus looked at her. "Interesting?"
+
+"We're reverse-engineering a self-referential cryptographic system using incomplete radiation data and statistical models held together with hope. If that's not interesting, I don't know what is."
+
+Despite everything, Sarai smiled. "You're not wrong."
+
+Adaeze was already pulling up the Oracle's architecture documentation. "The meta-layer has to be documented somewhere. They wouldn't have built something this critical without leaving a trail."
+
+"Documented three hundred years ago," Marcus said. "In languages and frameworks we barely use anymore."
+
+"Then we learn," Adaeze said simply.
+
+Dr. Kim nodded. "You have time. Not much, but enough. The Council won't finalize the lockdown until they've heard from you."
+
+"And if we fail?" Sarai asked.
+
+"Then we fail with data. And the next generation won't make the same mistakes." He looked at each of them in turn. "But you haven't failed yet."
+
+Sarai turned back to the whiteboard. Two attempts. One impossible meta-layer. Eight hours until the Council voted.
+
+She picked up the marker. "Okay. Let's figure out how this thing validates itself."

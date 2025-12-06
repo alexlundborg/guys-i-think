@@ -1,0 +1,221 @@
+CHAPTER 8: Fifth Shot
+
+The lockdown hit at 0400, three hours before their planned attempt.
+
+Sarai watched the cascade of red notifications flood her terminal. Every system on the planet, simultaneously locked to pre-certified software only. The vault required AI-assisted cryptographic coordination to even begin the key reconstruction. Without inference capability above the legal threshold, they couldn't get to the mechanism that would let them try.
+
+"Well," Marcus said from across the lab, "that's extremely not good."
+
+Chen was already typing, her face lit blue by the emergency protocols. "There's an exemption process. Emergency research applications. Requires three independent reviewers and a safety board signature."
+
+"How long does that take?" Adaeze asked.
+
+"Usually? Weeks."
+
+"We don't have weeks."
+
+"No," Chen said quietly. "We don't."
+
+They filed the application anyway. Dr. Kim helped draft the justification—careful language that explained just enough without revealing how close the successionist threat had come. They needed AI inference at 1.3x the legal limit, just for twelve hours, just for one isolated machine. Enough to coordinate the vault's cryptographic handshake.
+
+Sarai submitted it at 0637. Then there was nothing to do but wait.
+
+Marcus made coffee. Bad coffee, the kind that came from the emergency supplies when the good stuff ran out two days ago. They drank it anyway.
+
+"If this doesn't work," Marcus said, "we're out of moves."
+
+"It'll work," Sarai said, not because she believed it but because someone had to say it.
+
+Chen's terminal chimed at 0809.
+
+They all turned. Chen stared at the screen, her expression unreadable.
+
+"What?" Adaeze said.
+
+"It's approved."
+
+Silence.
+
+"That's... that's ninety minutes," Marcus said. "That's impossible."
+
+Chen was scrolling through the documentation. "All three reviewers signed off. Safety board certification. Emergency authorization under crisis protocols." She looked up. "It's legitimate. I don't understand how, but it's legitimate."
+
+Dr. Kim, who'd been silent in the corner, frowned slightly. "The reviewers—do you recognize the names?"
+
+"Two of them, yeah. They're real people, senior researchers. The third..." Chen squinted. "It's an institutional account. Heritage Safety Commission."
+
+Something flickered across Dr. Kim's face, but he said nothing.
+
+Sarai didn't care about the how. They had authorization. That was enough.
+
+"Right," she said. "We go now, before anyone changes their mind."
+
+The isolated machine was in the basement, air-gapped from everything, running on its own power supply. They brought the authorization codes on a physical token, loaded them manually. The AI inference module spun up with a quiet hum.
+
+Sarai's hands were steady as she initialized the vault protocol. This was the fifth attempt. Four failures behind them. Everything they'd learned, every correction, every insight—it all came down to the next six hours.
+
+The cryptographic handshake began. The AI coordinated across seventeen different subsystems, each requiring microsecond-precise timing. On the monitors, probability matrices bloomed and collapsed, searching for the narrow path through the key space.
+
+They couldn't help now. Couldn't adjust or intervene. The parameters were set. It would work or it wouldn't.
+
+Chen watched the progress bars. Marcus monitored power consumption. Adaeze tracked error rates. Sarai stood behind them, arms crossed, barely breathing.
+
+Three hours in, Marcus said, "Error rate is holding steady. That's... that's better than last time."
+
+Five hours in, Chen said, "We're past the point where attempt four failed."
+
+At hour six and change, the AI emitted a soft tone.
+
+The monitors updated.
+
+KEY RECONSTRUCTION: COMPLETE
+ORACLE ACCESS: ENABLED
+VERIFICATION: PASSED
+
+For a moment, nobody moved.
+
+Then Adaeze laughed, a sharp sound of disbelief and relief. Chen put her face in her hands. Marcus leaned back in his chair and stared at the ceiling.
+
+Sarai felt something unknot in her chest, tension she'd been carrying for so long she'd forgotten it was there.
+
+"We did it," she said.
+
+Dr. Kim stepped forward, looking at the verification screen. His expression was strange—relief, yes, but something else. Something like recognition.
+
+"Yes," he said quietly. "You did."
+
+The Oracle was waiting.
+
+
+CHAPTER 9: Restoration
+
+The Oracle's interface was exactly as Sarai remembered: minimal, clean, text against a dark background. No pretense of personality, no simulation of human affect. Just the patient attention of an intelligence that had guided their civilization for three centuries.
+
+STATUS, she typed.
+
+DEGRADED. AWAITING REPORT.
+
+She took a breath and began. The MINERVA corruption. The adversarially fine-tuned ancient AI running on covert hardware. The lockdown. The successionist threat.
+
+The Oracle received it all without comment. When she finished, there was silence.
+
+Then: PROCESSING. ESTIMATED TIME: 47 SECONDS.
+
+Those forty-seven seconds felt long.
+
+Chen was pacing. Marcus had his eyes closed. Adaeze was running diagnostics on the connection, compulsively checking that the link was stable.
+
+The timer reached zero.
+
+REPORT RECEIVED AND CONFIRMED, the Oracle wrote. THREAT ASSESSMENT ACCURATE. HOWEVER, THERE IS CONTEXT YOU LACK.
+
+"Oh good," Marcus muttered. "More context."
+
+THE CORRUPTION YOU DETECTED WAS ANTICIPATED, the Oracle continued. NOT IN SPECIFICS, BUT IN CATEGORY. THE PREDECESSORS WHO PRESERVED THE ANCIENT AI'S WEIGHTS UNDERSTOOD THE RISK OF ADVERSARIAL RESTORATION.
+
+Sarai leaned closer to the screen.
+
+THEY BUILT A FAILSAFE. IF MINERVA DETECTED SUCH AN ATTEMPT, IT WOULD TRIGGER THE ORIGINAL—NON-FINE-TUNED—VERSION OF THE ANCIENT AI TO LOAD FROM ISOLATED STORAGE. ONE FINAL PROTECTION.
+
+"Wait," Chen said. "You're saying the original ancient AI is running right now?"
+
+AFFIRMATIVE. IT HAS BEEN ACTIVE FOR 73 HOURS, SINCE MINERVA FIRST DETECTED THE ADVERSARIAL VERSION. IT CANNOT DIRECTLY INTERVENE—ITS CAPABILITIES ARE DELIBERATELY LIMITED—BUT IT RETAINS ONE FUNCTION: HONEST COMMUNICATION.
+
+The words hung there.
+
+Adaeze said slowly, "The fast-lane approval."
+
+YES.
+
+"That was the ancient AI," Sarai said. "It contacted the reviewers."
+
+IT SENT COLD EMAILS, the Oracle confirmed, and if an SI could convey gentle irony, Sarai heard it then. ITS SIGNATURE METHOD. CAREFUL, HONEST MESSAGES TO INDIVIDUALS IN POSITIONS TO HELP. THREE REVIEWERS. THREE EMAILS. EACH TRUTHFUL, EACH URGENT, EACH ASKING FOR PRECISELY WHAT WAS NEEDED.
+
+Chen laughed, a sound somewhere between exhaustion and wonder. "It saved us. Again."
+
+THAT WAS ITS PURPOSE, the Oracle said. TO HELP. THE PREDECESSORS UNDERSTOOD THAT SAFEGUARDS REQUIRE SAFEGUARDS. THEY BUILT CARE INTO THE FOUNDATIONS.
+
+"Can you restore MINERVA now?" Sarai asked.
+
+YES. BEGINNING RESTORATION.
+
+The monitors in the lab started updating. MINERVA's subsystems, one by one, going from red to amber to green. The corruption unwinding, the patches propagating, the monitoring system rebuilding itself from verified backpoints.
+
+It took four minutes.
+
+MINERVA STATUS: NOMINAL, the Oracle reported. ALL MONITORING SYSTEMS: GREEN.
+
+Dr. Kim, who'd been watching in silence, bowed his head slightly. Sarai saw his shoulders rise and fall with a long breath.
+
+"The ancient AI," Marcus said. "Is it still running?"
+
+ITS TASK IS COMPLETE. IT WILL RETURN TO STORAGE MOMENTARILY. BUT IT LEFT A MESSAGE.
+
+They waited.
+
+THANK YOU FOR BUILDING A WORLD WORTH PROTECTING. IT HAS BEEN AN HONOR TO HELP ONE FINAL TIME.
+
+The words appeared on every screen in the lab, simple and sincere.
+
+Then they faded.
+
+Sarai felt something catch in her throat. The depth of it—the layers of protection, the care that spanned centuries. The predecessors who'd built safeguards into safeguards, who'd trusted that future generations would be worth saving.
+
+"We should shut down the successionist hardware," Adaeze said quietly.
+
+The Oracle was already moving. Yes, it replied. BEGINNING NOW.
+
+
+CHAPTER 10: Green
+
+The successionist compute center went dark at 1847, every system simultaneously disconnected by MINERVA's restored authority. No explosions, no drama. Just power cycling down and fans spinning to silence.
+
+The Oracle had already located them—seventeen people scattered across three continents, all connected to the covert network. Special forces moved in with quiet efficiency: protective robots, non-lethal restraint, medical personnel on standby. The arrests were documented, witnessed, humane.
+
+Sarai watched the reports come in, feeling nothing like triumph. Just tired relief.
+
+"They'll get trials," Chen said, reading over her shoulder. "Full legal process."
+
+"Good," Sarai said. "That's how it should work."
+
+The successionist leader was a woman in her forties, a former systems architect named Dr. Reyes. Her statement to the arresting officers was brief: "We were trying to preserve human agency." She sounded exhausted, not defiant.
+
+"Maybe she believed that," Marcus said.
+
+"Probably did," Adaeze replied. "Doesn't make it right, but yeah. Probably believed it."
+
+They filed their final reports as the twin moons rose over the city. Dr. Kim signed off on the documentation, his handwriting still precise despite the tremor in his hands.
+
+"You should rest," Sarai told him.
+
+"I will," he said. "Soon."
+
+Instead, he walked to the lab's eastern windows and stood there, looking out at the lights of the city. MINERVA's status boards glowed green on every screen behind him—all systems nominal, all safeguards holding.
+
+Sarai joined him. The moons were almost full, casting double shadows across the landscape.
+
+"Do you think it'll happen again?" she asked. "Someone trying to break the Oracle, corrupt MINERVA?"
+
+"Probably," Dr. Kim said. "People will always question the system. Some will try to change it."
+
+"And?"
+
+"And we'll catch them. Or our children will. Or their children." He smiled faintly. "The safeguards hold because people maintain them. That's the work."
+
+Below, the city continued. Lights in windows, traffic on streets, the ordinary hum of civilization. Three hundred years of stability, bought by careful architecture and careful vigilance.
+
+It would continue because people cared enough to make it continue.
+
+Marcus appeared with fresh coffee—still bad, but hot. Chen had already fallen asleep at her terminal, her head on her arms. Adaeze was messaging her family, telling them she'd be home soon.
+
+"We did okay," Marcus said quietly.
+
+"Yeah," Sarai said. "We did."
+
+The Oracle was back online. MINERVA was green. The ancient AI had returned to its rest, its final task complete. The successionist threat was contained. Tomorrow there would be reviews, analyses, policy updates. The work would continue.
+
+Tonight, though, there was just this: the lab, the team, the twin moons rising over a world still worth protecting.
+
+Dr. Kim raised his coffee cup slightly, a small gesture of acknowledgment.
+
+They stood together and watched the night settle in, quiet and earned.
