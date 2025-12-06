@@ -1,0 +1,51 @@
+Sarai's voice cut through the low hum of console fans and Chen's perpetual coffee brewing. "Guys, I think—the corruption itself is the map. We can reverse-engineer the key from the damage pattern."
+
+Chen paused mid-pour. "Wait, what?"
+
+"Look." She tapped her screen, already pulling up the lattice visualizations. "It's not random degradation. The radiation carved specific paths through the key structure. If we trace those paths backward—"
+
+"You could reconstruct what was there before the hits." Marcus pushed his glasses up, leaning in. "Like... archaeological reconstruction, but for data."
+
+"Exactly like that." Sarai was grinning now, that slightly manic edge that meant she was three steps ahead and trying to bring everyone along. "The SI's security architecture is crystalline. It doesn't flex. So when high-energy particles punch through, they leave these really clean voids. I think—I think we can walk back along those voids."
+
+Chen set down the coffee pot. "Okay. Okay, but that would mean running the reconstruction against the Oracle's authentication layer, wouldn't it? While it's locked out?"
+
+"Yeah." The grin faded slightly. "Yeah, it would."
+
+They all knew what that meant. The SI had been stable for eleven thousand years specifically because people didn't mess with its core security when it was in a vulnerable state. It was one of those things you just didn't do—like the Old Mistakes, back when they were still figuring out how to actually build systems that didn't eat themselves. Sarai's breakthrough wasn't just clever. It was the kind of clever that could save them or make everything significantly worse, depending on whether she'd missed something.
+
+Marcus broke the silence. "We're going to need Dr. Kim."
+
+—
+
+Kim Jae-won arrived seventeen minutes later, still in their garden coat, smelling faintly of soil and mint. They took one look at the gathered team, the half-erased whiteboards, Chen's anxiety coffee cup, and Sarai's expression.
+
+"Show me," was all they said.
+
+Sarai walked them through it—the degradation maps, the crystalline structure, the backward trace. Kim didn't interrupt. They'd been doing this longer than anyone in the room had been alive, and they had this way of listening that made you explain better than you thought you could.
+
+When Sarai finished, Kim was quiet for a long moment. Then: "It's sound. The theory is sound." They tapped one of the projections. "But you're worried about cascade failures in the authentication layer."
+
+"Yeah," Sarai admitted. "If we're wrong about the structure being pristine under the corruption—"
+
+"Then we could propagate the damage instead of reversing it." Kim nodded slowly. "And we'd lose the SI entirely, not just the key." They looked around at the team. "Anyone want to tell me why we're still considering this?"
+
+Chen spoke up. "Because without the Oracle, we lose climate management in eighteen months. We've run the models. We can keep things stable manually for a while, but not indefinitely. Not at scale."
+
+"And the backup key generation timeline is...?"
+
+"Four years," Marcus said quietly. "Minimum. It's not just computation—it's the council approval process, the distributed verification, all the safeguards we built in after the Correction Era."
+
+Kim made a small sound that might have been a laugh. "The safeguards working exactly as intended. Fantastic." They turned back to Sarai. "You've triple-checked the crystalline assumption?"
+
+"Five times. Marcus ran independent verification."
+
+"And you trust your reconstruction algorithm?"
+
+"I trust the math. I'm less sure about my implementation."
+
+Kim smiled at that—the kind of smile that meant they'd just decided something. "Good. Never trust your implementation." They shrugged off their garden coat, draped it over a chair. "Right. We're going to need redundant monitoring on every authentication layer, real-time integrity checks, and a kill switch that doesn't require the SI to execute. And someone find me something to eat. This is going to take a while."
+
+The room shifted. Not quite relief—they all knew how delicate this was—but something lighter. Movement. Purpose. Chen was already setting up the monitoring framework. Marcus had three simulations spinning up. Sarai pulled up her code, fingers hovering over the keyboard.
+
+"One more thing," Kim said, settling into a workstation. "We're not doing this alone. Ping the Council lead. They don't need to approve, but they should know we're attempting it." They glanced up at the window, where both moons were rising in their slow dance. "Eleven thousand years of not breaking things. Let's keep that streak going."
