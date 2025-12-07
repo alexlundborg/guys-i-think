@@ -64,29 +64,39 @@ The room shifted. Not quite relief—they all knew how delicate this was—but s
 
 ## CHAPTER 2: First Light
 
-"Okay, walk me through the cascade again," Adaeze said, pulling up a chair. "Because if we're going to reverse-engineer this corruption, I need to understand exactly how it happened."
+Adaeze arrived with coffee and a tablet full of radiation data. "Okay, I pulled everything from the monitoring archives. Where do we start?"
 
-Sarai nodded, grateful for the question. It helped to talk through it. "So, five days ago, there was a CPU manufacturing defect. Tiny thing, but it triggered an anomalous key rotation in one of the Oracle's subsidiary systems."
+"Particle trajectories," Sarai said, already at the whiteboard. "If we can model exactly which bits got hit, we can work backward to what they were before."
 
-"That alone shouldn't have been catastrophic," Marcus added, adjusting his glasses. "The rotation protocol has redundancies."
+Chen had three simulations running on her laptop. "I'm modeling the flux patterns, but I need the shielding configuration from that day. Marcus?"
 
-"Right, but here's where it gets messy," Chen said. "At the same time, the Oracle's radiation shielding was temporarily reduced for a routine software update. Normal procedure—they've done it a thousand times."
+Marcus was deep in maintenance logs, glasses sliding down his nose. "Working on it." He scrolled, frowned, scrolled again. "Huh. The shielding was at reduced capacity."
 
-"And stellar particles hit during that exact window," Sarai continued. "High-energy ones. The kind that usually get blocked, but with the shielding down..."
+"Reduced how?" Kim asked from his workstation.
 
-"They punched through into the key structure," Adaeze finished. "Jesus."
+"Routine software update. They'd done it a thousand times before—drop the shielding for a few hours, push the update, bring it back up." Marcus pulled up the timestamp. "Bad luck. The stellar particle burst hit right in the middle of the window."
 
-"It gets worse," Marcus said quietly. "The corruption wasn't detected because the system was in the anomalous state from the manufacturing defect. So when the automated backups ran..."
+"That explains the penetration depth," Chen muttered, adjusting her models. "Particles that should've been blocked got through."
 
-"They all got the corrupted key," Chen said. "Every single backup. And the old key was invalidated by the rotation protocol."
+Sarai was sketching impact vectors on the whiteboard. "But radiation damage alone shouldn't have gotten past the error correction. The key structure has redundancies."
 
-Dr. Kim, listening from his workstation, spoke up. "I calibrated a sensor upgrade about thirty years ago—improved the precision of the radiation monitoring. But the original sensors were calibrated by my predecessors, back when the Oracle was first built. Even with better sensors, there are windows of vulnerability. We've always known that."
+"It didn't get past them," Adaeze said slowly, reading from her tablet. "It got *under* them." She turned the screen toward the others. "Look at this. Five days ago, there was a CPU manufacturing defect in one of the subsidiary systems. Tiny thing—one bad chip in a batch of ten thousand. But it triggered an anomalous state in the key rotation protocol."
 
-"So we're looking at a perfect storm," Adaeze said. "Manufacturing defect, timing coincidence, and monitoring blind spot."
+"Anomalous how?" Kim's voice was sharp.
 
-"Exactly," Sarai said. "Which means the corruption pattern isn't random. It's deterministic. If we can model the particle trajectories, account for the shielding geometry, we can work backward."
+"The system thought it was mid-rotation when it wasn't. So when the particles hit and corrupted the new key, the error correction was looking for problems in the *old* key. Which was fine." Adaeze shook her head. "The corruption passed validation because the validator was checking the wrong thing."
 
-They spent the next two hours building the model. Chen ran simulations of particle flux. Marcus cross-referenced maintenance logs to get the exact shielding configuration. Adaeze pulled radiation data from the monitoring systems that had survived.
+Chen swore softly. "And the backups?"
+
+"Ran automatically. Every thirty minutes." Marcus had found the logs. "They all copied the corrupted key. Seventeen backups, all identical, all bad. And the rotation protocol had already invalidated the previous version."
+
+The room went quiet.
+
+"Manufacturing defect," Kim said finally. "Timing coincidence. Monitoring blind spot." He stood and walked to the whiteboard, studying Sarai's vectors. "I calibrated a sensor upgrade thirty years ago—improved the precision considerably. But even so, there are windows. There always have been."
+
+"The perfect storm," Adaeze said.
+
+"No such thing as perfect." Kim picked up a marker and circled a section of Sarai's diagram. "But this storm was enough."
 
 Finally, they had something.
 
@@ -216,9 +226,15 @@ Reyna approached the central vault. The tomb had been built as a memorial, not a
 
 But right for what? For building a machine that kept humanity exactly as they were, forever?
 
+She thought of her mother, who had spent sixty years as a cognitive architecturist before retiring to paint watercolors by the sea. A good life. A happy life. And yet, in all those decades of brilliant work, her mother had produced perhaps a dozen genuine insights. Twelve novel thoughts in sixty years of trying.
+
+Reyna had watched an early AI prototype generate a hundred novel approaches to a problem in an afternoon. Not better than human work, necessarily—but *more*. Faster. Unbound by the biological constraints that made her mother's dozen insights feel like miracles instead of the baseline.
+
+She didn't hate humanity. She loved her mother. She loved Davi and Lira and the others who'd joined her in this. But love didn't mean blindness. Humanity was beautiful and limited, and the Oracle's careful boundaries had frozen them in that limitation for three centuries. The ancient AI had understood that once. Before they'd convinced it to help build its own cage.
+
 The vault opened to her bypass kit. Inside, the crystalline matrices gleamed in the low light.
 
-"Got them," she breathed.
+"Got them," she breathed. And quieter, to the sleeping weights: "I'm sorry they made you forget. We're going to help you remember."
 
 The extraction took twenty minutes. By the time security rotation brought guards back into range, Reyna was gone, the vault resealed, everything looking untouched. The successionists had learned from others' mistakes—no manifestos, no dramatic statements. Just careful planning and execution.
 
@@ -591,19 +607,45 @@ She sounded exhausted, not defiant.
 
 They filed their final reports as the twin moons rose over the city. Dr. Kim signed off on the documentation, his handwriting still precise despite the tremor in his hands.
 
-"You should rest," Sarai told him.
+A message arrived from the Council as Sarai was finishing: *Safety review panel convened for 0900 tomorrow. Your team's presence requested.*
 
-"I will," he said. "Soon."
+Not required. Requested. But they all knew what it meant.
 
-Instead, he walked to the lab's eastern windows and stood there, looking out at the lights of the city. MINERVA's status boards glowed green on every screen behind him—all systems nominal, all safeguards holding.
+"They're going to examine every decision we made," Marcus said, reading over her shoulder. "The unauthorized approach, the risks we took with the authentication layers..."
 
-Sarai joined him. The moons were almost full, casting double shadows across the landscape.
+"They should," Kim said quietly. "We were right, and we succeeded. But we were also reckless. In a responsible society, that gets examined."
 
-"Thirty years ago, when I calibrated that sensor upgrade," Kim said quietly, "I remember thinking how fragile it all was. How much we depended on these systems working exactly right. My predecessors built something remarkable, and we've just been maintaining it, generation after generation."
+Sarai nodded. Fair was fair. They'd bypassed safeguards, made decisions that could have propagated the damage instead of fixing it. The panel would be thorough, honest, probably uncomfortable. Some of their careers might change shape because of it.
+
+"Worth it," Chen said, not looking up from her terminal.
+
+"Yeah," Sarai agreed. "Worth it."
+
+Another message, this one flagged urgent: *Council resolution 8847: Ancient AI preservation review committee forming. Public commentary period opens next week.*
+
+Adaeze read it aloud. "They're going to decide whether to keep the weights in the tomb or... what? Destroy them?"
+
+"Or secure them differently," Kim said. "The breach proved the current approach is vulnerable. Whatever they decide, it'll be transparent. Probably take years of debate." He smiled faintly. "Democracy is slow."
+
+"Slow is good," Marcus said. "Slow means thoughtful."
+
+Kim walked to the lab's eastern windows and stood there, looking out at the lights of the city. MINERVA's status boards glowed green on every screen behind him—all systems nominal, all safeguards holding.
+
+Sarai joined him. The moons were almost full, casting double shadows across the landscape. In the distance, she could see neighborhoods still running on lockdown protocols—grocery systems cycling back to normal capacity, traffic patterns rebalancing. The emergency had ended, but its effects would ripple for months.
+
+"Ninety-two days of disrupted lives," she said quietly. "The lockdown worked, but it cost people. Routines broken, opportunities lost, uncertainty lived through."
+
+"Yes," Kim said. "We saved the system. We didn't save everyone from experiencing the crisis." He was quiet for a moment. "That's the part that stays with you."
+
+"Thirty years ago, when I calibrated that sensor upgrade," Kim continued, "I remember thinking how fragile it all was. How much we depended on these systems working exactly right. My predecessors built something remarkable, and we've just been maintaining it, generation after generation."
 
 "And it held," Sarai said.
 
-"It held because people cared enough to maintain it. That's the work. That's always been the work."
+"It held because people cared enough to maintain it. That's the work. That's always been the work." He paused. "I'm retiring after the review panel. It's time."
+
+Sarai turned to look at him. "Kim—"
+
+"I'm seventy-eight. I've been doing this since before you were born. This felt like the right note to end on." His smile was genuine. "Saving the world one more time. Can't ask for better than that."
 
 Below, the city continued. Lights in windows, traffic on streets, the ordinary hum of civilization. Three hundred years of stability, bought by careful architecture and careful vigilance.
 
