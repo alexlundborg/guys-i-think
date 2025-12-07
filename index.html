@@ -259,6 +259,96 @@
             border-radius: 2px;
         }
 
+        /* Audio player controls */
+        .audio-controls {
+            position: fixed;
+            bottom: 2rem;
+            right: 2rem;
+            background: rgba(20, 20, 20, 0.95);
+            backdrop-filter: blur(10px);
+            padding: 1rem 1.25rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.5);
+            z-index: 1000;
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeUp 0.6s ease-out 1s forwards;
+            min-width: 280px;
+        }
+
+        .audio-controls button {
+            padding: 0.5rem 1rem;
+            font-size: 0.85rem;
+            font-family: 'Inter', sans-serif;
+            cursor: pointer;
+            background: #333;
+            color: #e8e8e8;
+            border: 1px solid #444;
+            border-radius: 6px;
+            margin: 0 0.25rem;
+            transition: all 0.2s;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.4rem;
+        }
+
+        .audio-controls button:hover {
+            background: #444;
+            border-color: #555;
+        }
+
+        .audio-controls button:disabled {
+            background: #222;
+            color: #666;
+            cursor: not-allowed;
+            border-color: #333;
+        }
+
+        .audio-controls .play-pause {
+            background: #88aacc;
+            color: #0a0a0a;
+            border-color: #88aacc;
+            font-weight: 600;
+        }
+
+        .audio-controls .play-pause:hover {
+            background: #9abedb;
+            border-color: #9abedb;
+        }
+
+        .progress-bar {
+            width: 100%;
+            height: 4px;
+            background: #333;
+            border-radius: 2px;
+            margin: 0.75rem 0 0.5rem;
+            cursor: pointer;
+            position: relative;
+        }
+
+        .progress-fill {
+            height: 100%;
+            background: #88aacc;
+            border-radius: 2px;
+            width: 0%;
+            transition: width 0.1s linear;
+        }
+
+        .time-display {
+            font-size: 0.7rem;
+            color: #888;
+            font-family: 'Inter', monospace;
+            margin-top: 0.5rem;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .controls-row {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 0.5rem;
+        }
+
         /* Loading state */
         .loading {
             max-width: 38rem;
@@ -288,6 +378,43 @@
     <div id="content"></div>
 
     <div class="scroll-hint">Scroll</div>
+
+    <!-- Audio player controls -->
+    <div class="audio-controls">
+        <div class="controls-row">
+            <button class="play-pause" id="playPauseBtn">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" id="playIcon">
+                    <path d="M8 5v14l11-7z"/>
+                </svg>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" id="pauseIcon" style="display:none;">
+                    <path d="M6 4h4v16H6V4zm8 0h4v16h-4V4z"/>
+                </svg>
+                <span id="playPauseText">Listen</span>
+            </button>
+            <button id="rewindBtn" title="Rewind 10 seconds">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 5V1L7 6l5 5V7c3.31 0 6 2.69 6 6s-2.69 6-6 6-6-2.69-6-6H4c0 4.42 3.58 8 8 8s8-3.58 8-8-3.58-8-8-8z"/>
+                </svg>
+                10s
+            </button>
+            <button id="forwardBtn" title="Forward 30 seconds">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 5V1l5 5-5 5V7c-3.31 0-6 2.69-6 6s2.69 6 6 6 6-2.69 6-6h2c0 4.42-3.58 8-8 8s-8-3.58-8-8 3.58-8 8-8z"/>
+                </svg>
+                30s
+            </button>
+        </div>
+        <div class="progress-bar" id="progressBar">
+            <div class="progress-fill" id="progressFill"></div>
+        </div>
+        <div class="time-display">
+            <span id="currentTime">0:00</span>
+            <span id="duration">--:--</span>
+        </div>
+        <audio id="narrationAudio" preload="metadata">
+            <source src="story-narration.mp3" type="audio/mpeg">
+        </audio>
+    </div>
 
     <!-- Marked.js from CDN -->
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
@@ -497,6 +624,89 @@
             if (!scrolled && window.scrollY > 100) {
                 scrolled = true;
                 scrollHint.classList.add('hidden');
+            }
+        });
+
+        // Audio player controls
+        const audio = document.getElementById('narrationAudio');
+        const playPauseBtn = document.getElementById('playPauseBtn');
+        const rewindBtn = document.getElementById('rewindBtn');
+        const forwardBtn = document.getElementById('forwardBtn');
+        const progressBar = document.getElementById('progressBar');
+        const progressFill = document.getElementById('progressFill');
+        const currentTimeEl = document.getElementById('currentTime');
+        const durationEl = document.getElementById('duration');
+
+        // Format time as MM:SS
+        function formatTime(seconds) {
+            if (isNaN(seconds)) return '--:--';
+            const mins = Math.floor(seconds / 60);
+            const secs = Math.floor(seconds % 60);
+            return `${mins}:${secs.toString().padStart(2, '0')}`;
+        }
+
+        // Play/Pause toggle
+        const playIcon = document.getElementById('playIcon');
+        const pauseIcon = document.getElementById('pauseIcon');
+        const playPauseText = document.getElementById('playPauseText');
+
+        playPauseBtn.addEventListener('click', () => {
+            if (audio.paused) {
+                audio.play();
+                playIcon.style.display = 'none';
+                pauseIcon.style.display = 'inline';
+                playPauseText.textContent = 'Pause';
+            } else {
+                audio.pause();
+                playIcon.style.display = 'inline';
+                pauseIcon.style.display = 'none';
+                playPauseText.textContent = 'Listen';
+            }
+        });
+
+        // Rewind 10 seconds
+        rewindBtn.addEventListener('click', () => {
+            audio.currentTime = Math.max(0, audio.currentTime - 10);
+        });
+
+        // Forward 30 seconds
+        forwardBtn.addEventListener('click', () => {
+            audio.currentTime = Math.min(audio.duration, audio.currentTime + 30);
+        });
+
+        // Update progress bar
+        audio.addEventListener('timeupdate', () => {
+            if (audio.duration) {
+                const progress = (audio.currentTime / audio.duration) * 100;
+                progressFill.style.width = progress + '%';
+                currentTimeEl.textContent = formatTime(audio.currentTime);
+            }
+        });
+
+        // Set duration when loaded
+        audio.addEventListener('loadedmetadata', () => {
+            durationEl.textContent = formatTime(audio.duration);
+        });
+
+        // Click progress bar to seek
+        progressBar.addEventListener('click', (e) => {
+            const rect = progressBar.getBoundingClientRect();
+            const percent = (e.clientX - rect.left) / rect.width;
+            audio.currentTime = percent * audio.duration;
+        });
+
+        // Reset button when audio ends
+        audio.addEventListener('ended', () => {
+            playIcon.style.display = 'inline';
+            pauseIcon.style.display = 'none';
+            playPauseText.textContent = 'Listen';
+        });
+
+        // Keyboard shortcuts (spacebar to play/pause)
+        document.addEventListener('keydown', (e) => {
+            if (e.code === 'Space' && e.target === document.body) {
+                e.preventDefault();
+                playPauseBtn.click();
             }
         });
 

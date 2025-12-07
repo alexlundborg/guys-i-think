@@ -5,6 +5,11 @@
 # Drafts and working files
 complete_revised_story.txt
 chapters_*.txt
+rewritten_narrative.txt
 
-# Python server
+# Audio generation chunks (keep only final story-narration.mp3)
+narration_chunk_*.mp3
+
+# Python
 __pycache__/
+venv/
