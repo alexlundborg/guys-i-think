@@ -415,7 +415,10 @@
                             processed.push('</section>');
                             inNarrative = false;
                         }
-                        processed.push('<section class="ending"><p>The End</p></section>');
+                        processed.push(`
+                          
+                            <section class="ending"><p>The End</p></section>
+                        `);
                         continue;
                     }
 
