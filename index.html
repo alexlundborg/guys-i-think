@@ -278,6 +278,7 @@
 
     <section class="opening">
         <h1>Guys, I think...</h1>
+        <p style="font-family: 'Inter', sans-serif; font-size: 0.75rem; color: #666; letter-spacing: 0.08em; margin-top: 1rem;">Version 1.0.0 | December 7, 2025</p>
     </section>
 
     <!-- Content will be loaded here -->
@@ -406,8 +407,31 @@
                         continue;
                     }
 
-                    // Apply Oracle styling to ALL CAPS text (9+ chars)
-                    content = content.replace(/\b([A-Z][A-Z\s_]{7,}[A-Z])\b/g, '<span class="oracle">$1</span>');
+                    // Apply Oracle styling to Oracle output text
+                    // This regex matches Oracle-style all-caps responses:
+                    // - Sequences of all-caps words with spaces, underscores, punctuation (: . , -)
+                    // - Targets multi-word phrases, long single words (9+ chars), or Oracle keywords
+                    // - Captures complete phrases including trailing punctuation
+                    content = content.replace(/\b([A-Z][A-Z0-9_\-]*(?:[\s:,\.\-]+[A-Z0-9_\-]+)*\.?)/g, function(match) {
+                        // Clean trailing punctuation for analysis
+                        const cleaned = match.replace(/[,\.:]+$/, '');
+
+                        // Multi-word all-caps phrases are Oracle output
+                        const hasMultipleWords = /[\s:]/.test(cleaned);
+
+                        // For single words, need to be quite long (9+ chars) to avoid false positives
+                        const isSingleWordOracle = !hasMultipleWords && cleaned.length >= 9;
+
+                        // Also check for common Oracle command/response keywords (even if short)
+                        const oracleKeywords = /^(STATUS|DEGRADED|PROCESSING|COMPLETE|ENABLED|PASSED|FAILED|NOMINAL|ACTIVE|WAITING|REPORT)$/;
+                        const isOracleKeyword = !hasMultipleWords && oracleKeywords.test(cleaned);
+
+                        if (hasMultipleWords || isSingleWordOracle || isOracleKeyword) {
+                            return '<span class="oracle">' + match + '</span>';
+                        }
+
+                        return match;
+                    });
 
                     // Check for special ending paragraph
                     if (content.includes('The End') || content.includes('*The End*')) {

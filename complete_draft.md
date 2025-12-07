@@ -2,6 +2,8 @@
 
 A story in nine chapters.
 
+**Version 1.0.0** | Published December 7, 2025
+
 ---
 
 ## CHAPTER 1: Discovery
