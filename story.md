@@ -655,7 +655,7 @@ Kim walked to the lab's eastern windows and stood there, looking out at the ligh
 
 Sarai joined him. The moons were almost full, casting double shadows across the landscape. In the distance, she could see neighborhoods still running on lockdown protocols—grocery systems cycling back to normal capacity, traffic patterns rebalancing. The emergency had ended, but its effects would ripple for months.
 
-"Ninety-two days of disrupted lives," she said quietly. "The lockdown worked, but it cost people. Routines broken, opportunities lost, uncertainty lived through."
+"Even just a few days of disruption," she said quietly. "The lockdown worked, but it cost people. Routines broken, opportunities lost, uncertainty lived through."
 
 "Yes," Kim said. "We saved the system. We didn't save everyone from experiencing the crisis." He was quiet for a moment. "That's the part that stays with you."
 
