@@ -1,0 +1,10 @@
+# Temp files
+*.tmp
+.DS_Store
+
+# Drafts and working files
+complete_revised_story.txt
+chapters_*.txt
+
+# Python server
+__pycache__/
