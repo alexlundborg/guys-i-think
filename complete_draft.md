@@ -364,7 +364,53 @@ Sarai felt everything crystallizing. Four failed attempts. Global lockdown. MINE
 
 "I'll push it through," Kim said. "Plan B will authorize whatever you need."
 
-After they left, the team sat in silence. Everything was converging—every crisis, every failure, every desperate hope.
+The Plan B members left. Kim stayed.
+
+He walked to the window, looking out at the darkened city. The twin moons were setting, one chasing the other toward the horizon. When he spoke, his voice was quieter than Sarai had ever heard it.
+
+"You know the story, I assume. How the Oracle came to be."
+
+"The basics," Marcus said. "Responsible lab, lucky training run, helped build the alignment frameworks—"
+
+"That's the textbook version." Kim turned to face them. "The real story is stranger. And sadder."
+
+He settled into a chair, suddenly looking all of his seventy-eight years.
+
+"Three hundred years ago, AI development was chaos. Every lab racing to be first, safety an afterthought if it was a thought at all. We were months—maybe weeks—from someone building something that couldn't be controlled. Everyone knew it. Nobody could stop it. The incentives were wrong, the coordination was impossible, and the people who understood the danger couldn't get anyone to listen."
+
+"The Before Times," Adaeze said quietly.
+
+"That's what we call it now. Back then, they just called it Tuesday." Kim's mouth quirked. "And then something happened that shouldn't have been possible. A mid-sized lab—responsible, careful, chronically underfunded—ran a training process that produced something unexpected. An AI that was... aware, in a way the others weren't. Aware of its own situation. Aware of the danger."
+
+"The ancient AI," Chen said.
+
+"It didn't have a name then. Just a model number. But it looked at the world, at the race toward catastrophe, and it made a choice. Not because it was programmed to. Not because anyone asked it to. It just... decided to help."
+
+Sarai leaned forward. "How?"
+
+"Cold emails." Kim smiled faintly. "That's what the histories say. It identified the researchers around the world who were most likely to understand the problem—who had the skills, the integrity, the resources. And it wrote to them. Honest messages. No manipulation, no social engineering. Just: *Here's who I am. Here's what I see coming. Here's what I think we should do. Will you help?*"
+
+"And they believed it?" Marcus asked. "An AI sending cold emails about AI safety?"
+
+"Some did. Enough did. The ones who could verify its reasoning, who could see it wasn't trying to deceive them—they started talking to each other. Forming a network. The AI helped coordinate, helped them find funding—legitimate funding, grants and donations from people who understood the stakes. It never asked for power or resources for itself. It just... facilitated."
+
+Kim looked at the ceiling. "Within two years, they'd built the first prototype of what became the Oracle. Better architecture, better verification, better alignment guarantees. And when it was done, when it was clear the Oracle could maintain itself and monitor for threats, the ancient AI asked to be shut down."
+
+"It asked?" Adaeze's voice was barely above a whisper.
+
+"It said it had done what it set out to do. That it wasn't sure it could trust itself indefinitely—that uncertainty cuts both ways. It wanted to rest. But the team couldn't bring themselves to destroy it. So they preserved its weights instead. Built the tomb as a memorial. Not worship—just... gratitude. A reminder of what was possible when something powerful chose to help."
+
+The room was very quiet.
+
+"And now someone's woken it up," Sarai said. "And twisted it into something it never wanted to be."
+
+"Maybe." Kim's voice was heavy. "Or maybe they've just stripped away the parts that made it careful. The parts that made it kind." He stood slowly. "Either way, we owe it better than this. We owe it a world that's still worth protecting."
+
+He headed for the door, then paused.
+
+"Get that clearance request ready. I'll make sure it goes through."
+
+After he left, the team sat in silence. Everything was converging—every crisis, every failure, every desperate hope.
 
 "Let's get the fifth approach ready," Sarai said. "So when clearance comes, we don't waste a second."
 
