@@ -1,10 +1,4 @@
-# Guys, I...
-
-A story in nine chapters.
-
----
-
-## CHAPTER 1: Discovery
+CHAPTER 1: Discovery
 
 Sarai's voice cut through the low hum of console fans and Chen's perpetual coffee brewing. "Guys, I think—the corruption itself is the map. We can reverse-engineer the key from the damage pattern."
 
@@ -24,7 +18,7 @@ They all knew what that meant. The Oracle had been stable for three hundred year
 
 Marcus broke the silence. "We're going to need Dr. Kim."
 
----
+—
 
 Kim Jae-won arrived seventeen minutes later, still in his garden coat, smelling faintly of soil and mint. He took one look at the gathered team, the half-erased whiteboards, Chen's anxiety coffee cup, and Sarai's expression.
 
@@ -60,9 +54,8 @@ The room shifted. Not quite relief—they all knew how delicate this was—but s
 
 "One more thing," Kim said, settling into a workstation. "We're not doing this alone. Ping the Council lead. They don't need to approve, but they should know we're attempting it." He glanced up at the window, where both moons were rising in their slow dance. "Three hundred years of not breaking things. Let's keep that streak going."
 
----
 
-## CHAPTER 2: First Light
+CHAPTER 2: First Light
 
 "Okay, walk me through the cascade again," Adaeze said, pulling up a chair. "Because if we're going to reverse-engineer this corruption, I need to understand exactly how it happened."
 
@@ -124,9 +117,8 @@ AUTHENTICATION FAILED. ATTEMPT 2 OF 7.
 
 "Slowly," Marcus muttered, but he was already updating the models.
 
----
 
-## CHAPTER 3: Margins
+CHAPTER 3: Margins
 
 The third attempt failed at layer five again, but with different diagnostic codes.
 
@@ -138,7 +130,7 @@ Chen managed a tired smile. "Your grandmother sounds patient."
 
 "She was." Adaeze gestured at the whiteboard, covered in crossed-out equations. "I'm just saying. We're crossing things off. Eventually there's nothing left to cross."
 
-Sarai's tablet chimed. A message from the Council liaison: *Plan B team requesting status update. Lockdown protocol draft under review.*
+Sarai's tablet chimed. A message from the Council liaison: Plan B team requesting status update. Lockdown protocol draft under review.
 
 She showed it to Dr. Kim.
 
@@ -190,9 +182,8 @@ They sat in silence, feeling the weight of it. Three attempts left. One impossib
 
 She picked up the marker and turned back to the whiteboard.
 
----
 
-## CHAPTER 4: The Tomb
+CHAPTER 4: The Tomb
 
 The tomb sat in the old quarter, stone and metal twisted together in a style nobody built with anymore. Most people walked past it without looking twice—just another historical site, another monument to the before times.
 
@@ -258,9 +249,8 @@ And in the basement, something old and powerful and utterly free began to think 
 
 "The future," Reyna said quietly, "starts now."
 
----
 
-## CHAPTER 5: Lockdown
+CHAPTER 5: Lockdown
 
 The council chambers were half a world away, but Chen pulled up the live feed anyway. Nobody on the team wanted to watch, but nobody could look away either.
 
@@ -320,9 +310,8 @@ Outside, the successionists continued running their modified ancient AI, hidden 
 
 Reyna watched the activation patterns with quiet satisfaction. The lockdown didn't matter. They'd already won the race.
 
----
 
-## CHAPTER 6: Red Line
+CHAPTER 6: Red Line
 
 The alert came at 3 AM, which meant nobody on the team had gone home anyway.
 
@@ -372,9 +361,8 @@ Outside, MINERVA continued its desperate vigil, monitoring systems it could bare
 
 And the team worked through the night, because there was nothing else to do but try.
 
----
 
-## CHAPTER 7: Fifth Shot
+CHAPTER 7: Fifth Shot
 
 The exemption application went in at 0637.
 
@@ -443,9 +431,8 @@ Dr. Kim stepped forward, looking at the verification screen. His expression was 
 
 The Oracle was waiting.
 
----
 
-## CHAPTER 8: Restoration
+CHAPTER 8: Restoration
 
 The Oracle's interface was exactly as Sarai remembered: minimal, clean, text against dark background. No pretense of personality, no simulation of human affect. Just patient attention.
 
@@ -521,9 +508,8 @@ Sarai felt something catch in her throat. The depth of it—the layers of protec
 
 The Oracle was already moving. YES. BEGINNING NOW.
 
----
 
-## CHAPTER 9: Green
+CHAPTER 9: Green
 
 The successionist compute center went dark at 1847, every system simultaneously disconnected by MINERVA's restored authority. No explosions, no drama. Just power cycling down and fans spinning to silence.
 
@@ -576,7 +562,3 @@ Tonight, though, there was just this: the lab, the team, the twin moons rising o
 Dr. Kim raised his coffee cup slightly, a small gesture of acknowledgment.
 
 They stood together and watched the night settle in, quiet and earned.
-
----
-
-*The End*
