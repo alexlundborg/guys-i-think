@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Guys, I...</title>
+    <title>Guys, I think...</title>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,500&display=swap');
 
@@ -151,6 +151,26 @@
             box-shadow: 0 20px 60px rgba(0,0,0,0.6);
         }
 
+        /* Full-screen ending image */
+        .ending-image {
+            width: 100%;
+            margin: 4rem 0 0 0;
+            padding: 0;
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+        }
+
+        .ending-image.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .ending-image img {
+            width: 100%;
+            display: block;
+        }
+
         /* Section divider */
         .section-break {
             max-width: 38rem;
@@ -257,7 +277,7 @@
     </section>
 
     <section class="opening">
-        <h1>Guys, I...</h1>
+        <h1>Guys, I think...</h1>
     </section>
 
     <!-- Content will be loaded here -->
@@ -358,8 +378,33 @@
                 if (el.tagName === 'P') {
                     let content = el.innerHTML;
 
-                    // Skip image paragraphs
-                    if (el.querySelector('img')) continue;
+                    // Handle image paragraphs (other than the second image which is hardcoded)
+                    if (el.querySelector('img')) {
+                        const img = el.querySelector('img');
+                        // Close narrative if open
+                        if (inNarrative) {
+                            processed.push('</section>');
+                            inNarrative = false;
+                        }
+
+                        // Check if this is near the end (look ahead for "The End")
+                        let isEndingImage = false;
+                        for (let j = i + 1; j < Math.min(i + 5, elements.length); j++) {
+                            if (elements[j].textContent.includes('The End')) {
+                                isEndingImage = true;
+                                break;
+                            }
+                        }
+
+                        // Apply appropriate class
+                        const imageClass = isEndingImage ? 'ending-image' : 'scene-image';
+                        processed.push(`
+                            <section class="${imageClass}">
+                                <img src="${img.src}" alt="${img.alt || ''}">
+                            </section>
+                        `);
+                        continue;
+                    }
 
                     // Apply Oracle styling to ALL CAPS text (9+ chars)
                     content = content.replace(/\b([A-Z][A-Z\s_]{7,}[A-Z])\b/g, '<span class="oracle">$1</span>');
@@ -409,7 +454,7 @@
             }, observerOptions);
 
             // Observe all animatable elements
-            document.querySelectorAll('.narrative p, .scene-image, .section-break, .chapter-header, .ending').forEach(el => {
+            document.querySelectorAll('.narrative p, .scene-image, .ending-image, .section-break, .chapter-header, .ending').forEach(el => {
                 observer.observe(el);
             });
         }

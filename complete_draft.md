@@ -1,4 +1,4 @@
-# Guys, I...
+# Guys, I think...
 
 A story in nine chapters.
 
@@ -6,7 +6,7 @@ A story in nine chapters.
 
 ## CHAPTER 1: Discovery
 
-Sarai's voice cut through the low hum of console fans and Chen's perpetual coffee brewing. "Guys, I think—the corruption itself is the map. We can reverse-engineer the key from the damage pattern."
+Sarai's voice cut through the low hum of console fans and Chen's perpetual coffee brewing. "Guys, I think the corruption itself is the map. We can reverse-engineer the key from the damage pattern."
 
 Chen paused mid-pour. "Wait, what?"
 
@@ -664,6 +664,8 @@ Tonight, though, there was just this: the lab, the team, the twin moons rising o
 Dr. Kim raised his coffee cup slightly, a small gesture of acknowledgment.
 
 They stood together and watched the night settle in, quiet and earned.
+
+![The team on the terrace at dusk](ending_terrace.jpeg)
 
 ---
 
