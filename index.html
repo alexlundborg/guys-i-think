@@ -297,12 +297,11 @@
             const temp = document.createElement('div');
             temp.innerHTML = html;
 
-            // Track if we've seen the first image (hero is already placed)
-            let imageCount = 0;
-
             // Process all elements
             const elements = temp.children;
             const processed = [];
+            let inNarrative = false;
+            let chapterCount = 0;
 
             for (let i = 0; i < elements.length; i++) {
                 const el = elements[i];
@@ -313,6 +312,10 @@
 
                 // Handle horizontal rules (---) as section breaks
                 if (el.tagName === 'HR') {
+                    if (inNarrative) {
+                        processed.push('</section>');
+                        inNarrative = false;
+                    }
                     processed.push('<section class="section-break"><hr></section>');
                     continue;
                 }
@@ -322,49 +325,59 @@
                     const text = el.textContent;
                     const match = text.match(/CHAPTER\s+(\d+|[A-Z]+):\s*(.+)/i);
                     if (match) {
+                        // Close previous narrative section if open
+                        if (inNarrative) {
+                            processed.push('</section>');
+                            inNarrative = false;
+                        }
+
+                        chapterCount++;
                         const chapterNum = match[1];
                         const chapterTitle = match[2];
+
+                        // Add second image after chapter 1
+                        if (chapterCount === 2) {
+                            processed.push(`
+                                <section class="scene-image">
+                                    <img src="Generated Image December 06, 2025 - 6_42PM.jpeg" alt="Dr. Kim arrives">
+                                </section>
+                            `);
+                        }
+
                         processed.push(`
                             <div class="chapter-header">
                                 <h2>Chapter ${chapterNum}</h2>
                                 <h3>${chapterTitle}</h3>
                             </div>
                         `);
-                        // Start a new narrative section after chapter header
-                        processed.push('<section class="narrative">');
                         continue;
                     }
-                }
-
-                // Handle images (skip first one as it's the hero)
-                if (el.tagName === 'P' && el.querySelector('img')) {
-                    if (imageCount === 0) {
-                        // This is the second image in the markdown (first after hero)
-                        const img = el.querySelector('img');
-                        processed.push(`
-                            </section>
-                            <section class="scene-image">
-                                <img src="${img.src}" alt="${img.alt || ''}">
-                            </section>
-                            <section class="narrative">
-                        `);
-                        imageCount++;
-                    }
-                    continue;
                 }
 
                 // Handle paragraphs
                 if (el.tagName === 'P') {
                     let content = el.innerHTML;
 
-                    // Apply Oracle styling to ALL CAPS text and specific patterns
-                    content = content.replace(/\b([A-Z][A-Z\s]{8,})\b/g, '<span class="oracle">$1</span>');
+                    // Skip image paragraphs
+                    if (el.querySelector('img')) continue;
+
+                    // Apply Oracle styling to ALL CAPS text (9+ chars)
+                    content = content.replace(/\b([A-Z][A-Z\s_]{7,}[A-Z])\b/g, '<span class="oracle">$1</span>');
 
                     // Check for special ending paragraph
                     if (content.includes('The End') || content.includes('*The End*')) {
-                        processed.push('</section>');
+                        if (inNarrative) {
+                            processed.push('</section>');
+                            inNarrative = false;
+                        }
                         processed.push('<section class="ending"><p>The End</p></section>');
                         continue;
+                    }
+
+                    // Start narrative section if not in one
+                    if (!inNarrative) {
+                        processed.push('<section class="narrative">');
+                        inNarrative = true;
                     }
 
                     processed.push(`<p>${content}</p>`);
@@ -373,7 +386,9 @@
             }
 
             // Close any open narrative section
-            processed.push('</section>');
+            if (inNarrative) {
+                processed.push('</section>');
+            }
 
             return processed.join('\n');
         }
