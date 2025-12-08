@@ -334,7 +334,7 @@ By morning, the world outside felt different. The lab still functioned—their c
 
 "Ninety days maximum," Sarai read. "After that, nobody knows."
 
-The weight settled over them. They had three attempts to fix the Oracle. But now they couldn't even run those attempts without special clearance. And getting that clearance meant admitting they'd already failed four times.
+The weight settled over them. They had two attempts to fix the Oracle. But now they couldn't even run those attempts without special clearance. And getting that clearance meant admitting they'd already failed five times.
 
 Dr. Kim found them in the afternoon. "Plan B is officially active. They're working on containment protocols, preparing for the long haul." He paused. "But they wanted me to ask—do you have anything left? Any path forward?"
 
