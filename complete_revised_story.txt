@@ -398,7 +398,7 @@ Sarai didn't care about the how. They had authorization.
 
 The isolated machine was in the basement, air-gapped from everything. They loaded the authorization codes on a physical token, initialized the AI inference module manually.
 
-Sarai's hands were steady as she started the vault protocol. This was attempt five. Four failures behind them. Everything they'd learned, every correction, every insight—it all came down to this.
+Sarai's hands were steady as she started the vault protocol. This was attempt six. Five failures behind them. Everything they'd learned, every correction, every insight—it all came down to this.
 
 The cryptographic handshake began. The AI coordinated across seventeen subsystems, searching for the narrow path through corrupted key space and damaged validation structure simultaneously.
 
