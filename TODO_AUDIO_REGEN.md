@@ -3,7 +3,6 @@
 The authentication attempt counter in Chapter 3 ("Margins") has been fixed in the source files.
 
 ## Changes Made
-- Added missing "AUTHENTICATION FAILED. ATTEMPT 3 OF 7." after "The third attempt failed"
 - Fixed "ATTEMPT 3 OF 7" → "ATTEMPT 4 OF 7" (after "fourth attempt")
 - Fixed "ATTEMPT 4 OF 7" → "ATTEMPT 5 OF 7" (next failed attempt)
 - Fixed "ATTEMPT 5 OF 7" → "ATTEMPT 6 OF 7" (successful attempt)

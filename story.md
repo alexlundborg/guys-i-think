@@ -162,8 +162,6 @@ AUTHENTICATION FAILED. ATTEMPT 2 OF 7.
 
 The third attempt failed at layer five again, but with different diagnostic codes.
 
-AUTHENTICATION FAILED. ATTEMPT 3 OF 7.
-
 "We're overcorrecting," Marcus said, studying the output. "The scatter model is too aggressive now."
 
 "My grandmother used to do logic puzzles," Adaeze said suddenly. They all looked at her. "You know, the kind where you eliminate possibilities until only the truth is left. She always said the secret wasn't being smart—it was being stubborn. You just keep crossing things off."
