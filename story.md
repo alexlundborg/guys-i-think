@@ -198,7 +198,7 @@ Dr. Kim looked up sharply. "Error propagation. You've been modeling each layer i
 
 "Recalculate the later bits with early errors factored in," Kim said.
 
-They worked fast, rebuilding the model with the new framework. An hour later, they had a fourth key candidate.
+They worked fast, rebuilding the model with the new framework. An hour later, they had a fifth key candidate.
 
 "This is our best guess," Chen said. "But I'm less confident in the confidence. There are a lot of compounding variables."
 
@@ -350,7 +350,7 @@ He was quiet for a long moment. "I'll help you file for emergency exemption. Pla
 
 "We know," Sarai said. "We'll take what we can get."
 
-After he left, they began documenting their fifth approach—the meta-layer reconstruction, accounting for both key corruption and validation structure damage. It was speculative, half-baked, possibly brilliant or possibly nonsense.
+After he left, they began documenting their sixth approach—the meta-layer reconstruction, accounting for both key corruption and validation structure damage. It was speculative, half-baked, possibly brilliant or possibly nonsense.
 
 But it was all they had left.
 
