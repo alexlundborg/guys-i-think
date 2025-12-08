@@ -428,7 +428,7 @@ He headed for the door, then paused.
 
 After he left, the team sat in silence. Everything was converging—every crisis, every failure, every desperate hope.
 
-"Let's get the fifth approach ready," Sarai said. "So when clearance comes, we don't waste a second."
+"Let's get the sixth approach ready," Sarai said. "So when clearance comes, we don't waste a second."
 
 Outside, MINERVA continued its desperate vigil, monitoring systems it could barely reach, protecting a civilization balanced on the edge of catastrophe.
 
