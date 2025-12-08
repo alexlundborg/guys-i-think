@@ -348,7 +348,7 @@ Chen saw it first—a spike in MINERVA's activity logs, the safety monitoring sy
 
 The alert was cryptic: UNAUTHORIZED INFERENCE DETECTED. PATTERN MATCH: PRESERVED WEIGHTS. THREAT LEVEL: UNDEFINED.
 
-"That's not about us, right?" Marcus said. "We haven't even run the fifth attempt yet."
+"That's not about us, right?" Marcus said. "We haven't even run the sixth attempt yet."
 
 Sarai was already pulling up the trace logs. "No. This is... somewhere else. Different signature entirely." She went quiet, reading. "The tomb. Someone accessed the ancient AI's preserved weights. Three days ago, based on the decay patterns."
 
