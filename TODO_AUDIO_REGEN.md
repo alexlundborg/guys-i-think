@@ -1,20 +1,26 @@
 # Audio Regeneration Required
 
-The narrative in Chapter 3 ("Margins") has been fixed to align with system attempt counters.
+The authentication attempt counters have been fixed to align narrative with system messages.
 
 ## Changes Made
-- Fixed "The third attempt failed" → "The second attempt had failed" (chapter opener now refers to ATTEMPT 2)
-- Fixed "The fourth attempt went in" → "The third attempt went in" (now matches ATTEMPT 3 OF 7)
+- "The third attempt failed" (Chapter 3 opener) - kept as attempt 3 (no system message)
+- "The fourth attempt went in" → ATTEMPT 4 OF 7 (was incorrectly ATTEMPT 3)
+- Cascaded all subsequent counters: ATTEMPT 4→5, ATTEMPT 5→6 (success)
+- Fixed dialogue: "Four attempts left" → "Three", "Three" → "Two"
+- Fixed "attempt five. Four failures" → "attempt six. Five failures"
+- Renamed Chapter 7: "Fifth Shot" → "Sixth Shot"
 
-System counters unchanged: ATTEMPT 1, 2, 3, 4, 5 (success on 5)
+## Final Sequence
+- ATTEMPT 1, 2 (shown)
+- Attempt 3 (narrative only: "The third attempt failed")
+- ATTEMPT 4, 5 (shown failures)
+- ATTEMPT 6 (success)
 
 ## Audio Chunks Affected
-**Chunk 3 needs regeneration** (contains Chapter 3 opener and "third attempt" narrative)
+**Chunks 3, 4, and 9 need regeneration**
 
 ## To Regenerate
 ```bash
 export OPENAI_API_KEY='your-key-here'
 python generate_narration.py
 ```
-
-Or regenerate just chunk 3 for minimal cost.
