@@ -398,7 +398,7 @@ The woman spoke up. "The weights they extracted are three hundred years old. The
 
 Sarai felt everything crystallizing. Four failed attempts. Global lockdown. MINERVA degraded. And now an ancient AI running somewhere, operated by people who wanted to hand the future to machine intelligence.
 
-"We need clearance for the fifth attempt," she said. "We need it now."
+"We need clearance for the sixth attempt," she said. "We need it now."
 
 "I'll push it through," Kim said. "Plan B will authorize whatever you need."
 
