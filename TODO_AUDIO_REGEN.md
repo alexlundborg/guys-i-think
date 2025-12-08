@@ -1,22 +1,26 @@
 # Audio Regeneration Required
 
-The authentication attempt counter in Chapter 3 ("Margins") has been fixed in the source files.
+The authentication attempt counters have been fixed to align narrative with system messages.
 
 ## Changes Made
-- Fixed "ATTEMPT 3 OF 7" → "ATTEMPT 4 OF 7" (after "fourth attempt")
-- Fixed "ATTEMPT 4 OF 7" → "ATTEMPT 5 OF 7" (next failed attempt)
-- Fixed "ATTEMPT 5 OF 7" → "ATTEMPT 6 OF 7" (successful attempt)
-- Fixed dialogue references: "Four attempts left" → "Three attempts left", "Three attempts left" → "Two attempts left"
+- "The third attempt failed" (Chapter 3 opener) - kept as attempt 3 (no system message)
+- "The fourth attempt went in" → ATTEMPT 4 OF 7 (was incorrectly ATTEMPT 3)
+- Cascaded all subsequent counters: ATTEMPT 4→5, ATTEMPT 5→6 (success)
+- Fixed dialogue: "Four attempts left" → "Three", "Three" → "Two"
+- Fixed "attempt five. Four failures" → "attempt six. Five failures"
+- Renamed Chapter 7: "Fifth Shot" → "Sixth Shot"
+
+## Final Sequence
+- ATTEMPT 1, 2 (shown)
+- Attempt 3 (narrative only: "The third attempt failed")
+- ATTEMPT 4, 5 (shown failures)
+- ATTEMPT 6 (success)
 
 ## Audio Chunks Affected
-The generate_narration.py script uses `complete_draft.md` and chunks at ~4000 character boundaries.
-
-**Chunks 3-4 need regeneration** (Chapter 3 "Margins" starts around character 9500, auth counter content spans chars 9500-13000)
+**Chunks 3, 4, and 9 need regeneration**
 
 ## To Regenerate
 ```bash
 export OPENAI_API_KEY='your-key-here'
 python generate_narration.py
 ```
-
-Note: This will regenerate all chunks. If you want to regenerate only specific chunks, modify the script or manually process the affected text sections.
