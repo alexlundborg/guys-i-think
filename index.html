@@ -403,6 +403,9 @@
                 </svg>
                 30s
             </button>
+            <button id="speedBtn" title="Toggle playback speed">
+                1x
+            </button>
         </div>
         <div class="progress-bar" id="progressBar">
             <div class="progress-fill" id="progressFill"></div>
@@ -700,6 +703,18 @@
             playIcon.style.display = 'inline';
             pauseIcon.style.display = 'none';
             playPauseText.textContent = 'Listen';
+        });
+
+        // Speed toggle (1x / 1.25x)
+        const speedBtn = document.getElementById('speedBtn');
+        let isSpedUp = false;
+
+        speedBtn.addEventListener('click', () => {
+            isSpedUp = !isSpedUp;
+            audio.playbackRate = isSpedUp ? 1.25 : 1.0;
+            speedBtn.textContent = isSpedUp ? '1.25x' : '1x';
+            speedBtn.style.background = isSpedUp ? '#88aacc' : '#333';
+            speedBtn.style.color = isSpedUp ? '#0a0a0a' : '#e8e8e8';
         });
 
         // Keyboard shortcuts (spacebar to play/pause)
