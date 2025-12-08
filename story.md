@@ -160,7 +160,7 @@ AUTHENTICATION FAILED. ATTEMPT 2 OF 7.
 
 ## CHAPTER 3: Margins
 
-The third attempt failed at layer five again, but with different diagnostic codes.
+The second attempt had failed at layer five, but with different diagnostic codes than the first.
 
 "We're overcorrecting," Marcus said, studying the output. "The scatter model is too aggressive now."
 
@@ -180,13 +180,13 @@ She showed it to Dr. Kim.
 
 "Long enough," Kim said. "Keep working."
 
-They refined the scatter model, scaling back the deflection angles, accounting for absorption losses. The fourth attempt went in with everyone holding their breath.
+They refined the scatter model, scaling back the deflection angles, accounting for absorption losses. The third attempt went in with everyone holding their breath.
 
-AUTHENTICATION FAILED. ATTEMPT 4 OF 7.
+AUTHENTICATION FAILED. ATTEMPT 3 OF 7.
 
 "Layer six," Chen said. "We're getting deeper."
 
-"Three attempts left," Marcus said, adjusting his glasses in that nervous way he had. "Margins are getting tight."
+"Four attempts left," Marcus said, adjusting his glasses in that nervous way he had. "Margins are getting tight."
 
 Sarai stared at the diagnostic output. They were learning, getting closer with each try. But close wasn't the same as correct.
 
@@ -204,7 +204,7 @@ They worked fast, rebuilding the model with the new framework. An hour later, th
 
 "It's what we have," Sarai said.
 
-AUTHENTICATION FAILED. ATTEMPT 5 OF 7.
+AUTHENTICATION FAILED. ATTEMPT 4 OF 7.
 
 "Layer seven," Chen breathed. "We made it to layer seven."
 
@@ -216,7 +216,7 @@ One layer from the end. So close.
 
 "Yes."
 
-They sat in silence, feeling the weight of it. Two attempts left. One impossible meta-layer to crack. And outside, the Council was preparing to lock down the planet.
+They sat in silence, feeling the weight of it. Three attempts left. One impossible meta-layer to crack. And outside, the Council was preparing to lock down the planet.
 
 "We figure out how it validates itself," Sarai said finally. "We've got time. Not much, but enough."
 
@@ -322,7 +322,7 @@ Chen stood and walked to the window. Outside, the lab district looked normal—p
 
 "Maybe," Dr. Kim said. "But it'll take time. Reviews, approvals, safety board certification. We're talking weeks, normally."
 
-"We don't have weeks," Chen said quietly. "We have two attempts left."
+"We don't have weeks," Chen said quietly. "We have three attempts left."
 
 The lockdown hit at midnight. Chen was running diagnostics when half her monitoring tools simply vanished, replaced by a system message: DIRECTIVE 779: NON-ESSENTIAL SOFTWARE RESTRICTED.
 
@@ -511,7 +511,7 @@ The monitors updated.
 KEY RECONSTRUCTION: COMPLETE
 ORACLE ACCESS: ENABLED
 VERIFICATION: PASSED
-ATTEMPT 6 OF 7.
+ATTEMPT 5 OF 7.
 
 For a moment, nobody moved.
 
