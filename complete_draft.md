@@ -138,7 +138,7 @@ AUTHENTICATION FAILED. ATTEMPT 2 OF 7.
 
 ## CHAPTER 3: Margins
 
-The second attempt had failed at layer five, but with different diagnostic codes than the first.
+The third attempt failed at layer five again, but with different diagnostic codes.
 
 "We're overcorrecting," Marcus said, studying the output. "The scatter model is too aggressive now."
 
