@@ -502,7 +502,7 @@ They couldn't help now. Couldn't adjust or intervene. It would work or it wouldn
 
 Three hours in, Marcus said, "Error rate is holding steady. Better than last time."
 
-Five hours in, Chen said, "We're past where attempt four failed."
+Five hours in, Chen said, "We're past where attempt five failed."
 
 At hour six and change, the AI emitted a soft tone.
 
