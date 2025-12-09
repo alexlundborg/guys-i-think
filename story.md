@@ -28,7 +28,7 @@ A story in nine chapters.
 
 ## CHAPTER 1: Discovery
 
-Sarai's voice cut through the low hum of console fans and Chen's perpetual coffee brewing. "Guys, I think the corruption itself is the map. We can reverse-engineer the key from the damage pattern."
+Sarai's voice cut through the low hum of laptop fans and Chen's perpetual coffee brewing. "Guys, I think the corruption itself is the map. We can reverse-engineer the key from the damage pattern."
 
 Chen paused mid-pour. "Wait, what?"
 
@@ -188,7 +188,7 @@ AUTHENTICATION FAILED. ATTEMPT 4 OF 7.
 
 "Three attempts left," Marcus said, adjusting his glasses in that nervous way he had. "Margins are getting tight."
 
-Sarai stared at the diagnostic output. They were learning, getting closer with each try. But close wasn't the same as correct.
+Sarai stared at the diagnostic output. They were learning, getting closer with each try.
 
 "The corruption—it's not just in the key bits themselves," she said slowly. "The validation layers process the key sequentially. Errors in early layers could propagate forward."
 
@@ -340,9 +340,9 @@ Dr. Kim found them in the afternoon. "Plan B is officially active. They're worki
 
 The team exchanged glances.
 
-"We do," Sarai said carefully. "But we'd need access. Real access. Enough compute to coordinate the cryptographic handshake for the meta-layer validation."
+"We do," Sarai said carefully. "But we'd need access. Real access. Enough compute to vibe the cryptographic handshake for the meta-layer validation."
 
-"That's above the lockdown threshold," Kim said.
+"That's above the threshold," Kim said.
 
 "Yeah."
 
@@ -396,7 +396,7 @@ The woman spoke up. "The weights they extracted are three hundred years old. The
 
 "Then all bets are off," the younger man said. "Based on the inference patterns, they've definitely modified something."
 
-Sarai felt everything crystallizing. Four failed attempts. Global lockdown. MINERVA degraded. And now an ancient AI running somewhere, operated by people who wanted to hand the future to machine intelligence.
+Sarai felt everything crystallizing. five failed attempts. Global lockdown. MINERVA degraded. And now an ancient AI running somewhere, operated by people who wanted to hand the future to machine intelligence.
 
 "We need clearance for the sixth attempt," she said. "We need it now."
 
@@ -531,7 +531,7 @@ The Oracle was waiting.
 
 ## CHAPTER 8: Restoration
 
-The Oracle's interface was exactly as Sarai remembered: minimal, clean, text against dark background. No pretense of personality, no simulation of human affect. Just patient attention.
+The Oracle's interface was exactly as Sarai remembered: minimal, clean, text against dark background.
 
 STATUS, she typed.
 
