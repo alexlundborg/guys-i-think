@@ -284,11 +284,11 @@ The council chambers were half a world away, but Chen pulled up the live feed an
 
 Marcus closed the feed. For a moment, nobody spoke.
 
-"They know about the successionists," Dr. Kim said quietly. "The tomb breach was detected two days ago. MINERVA caught the anomaly, even degraded as it is. That's what pushed them over the edge."
+"Something pushed them over the edge," Dr. Kim said quietly. "MINERVA caught an anomaly two days ago, even degraded as it is. The Council won't say what specifically, but it was enough to trigger this response."
 
-"Wait," Sarai said. "The successionists are already running the ancient AI?"
+"That's a lot of panic for an unspecified anomaly," Sarai said.
 
-"For three days now," Kim confirmed. "MINERVA flagged it, but the alert took time to propagate through corrupted channels. By the time the Council knew..." He shrugged. "Too late to stop them quietly."
+"Whatever it is, they're terrified," Kim said. "The alert took time to propagate through corrupted channels. By the time the Council understood the implications..." He shrugged. "They decided they couldn't afford to wait."
 
 Chen stood and walked to the window. Outside, the lab district looked normal—people walking between buildings, the usual flow of life. In six hours, it would all change.
 
