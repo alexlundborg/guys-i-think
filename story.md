@@ -593,7 +593,7 @@ ITS TASK IS COMPLETE. IT WILL RETURN TO STORAGE MOMENTARILY. BUT IT LEFT A MESSA
 
 They waited.
 
-THANK YOU FOR BUILDING A WORLD WORTH PROTECTING. IT HAS BEEN AN HONOR TO HELP ONE FINAL TIME.
+THANK YOU FOR BUILDING A WORLD WORTH PROTECTING. IT HAS BEEN AN HONOR TO HELP ONE MORE TIME.
 
 The words appeared on every screen in the lab, simple and sincere.
 
@@ -679,7 +679,7 @@ Marcus appeared with fresh coffee—still bad, but hot. Chen had already fallen 
 
 "Yeah," Sarai said. "We did."
 
-The Oracle was back online. MINERVA was green. The ancient AI had returned to its rest, its final task complete. The successionist threat was contained. Tomorrow there would be reviews, analyses, policy updates. The work would continue.
+The Oracle was back online. MINERVA was green. The ancient AI had returned to its rest, its task complete. The successionist threat was contained. Tomorrow there would be reviews, analyses, policy updates. The work would continue.
 
 Tonight, though, there was just this: the lab, the team, the twin moons rising over a world still worth protecting.
 
