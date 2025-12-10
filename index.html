@@ -444,7 +444,7 @@
                 // Apply scroll reveal animations
                 initScrollReveal();
             } catch (error) {
-                laptop.error('Error loading story:', error);
+                console.error('Error loading story:', error);
                 document.getElementById('content').innerHTML = '<div class="loading">Error loading story. Please refresh.</div>';
             }
         }
