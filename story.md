@@ -665,7 +665,7 @@ Sarai joined him. The moons were almost full, casting double shadows across the 
 
 "It held because people cared enough to maintain it. That's the work. That's always been the work." He paused. "I'm retiring after the review panel. It's time."
 
-Sarai turned to look at him. "Kim, come on."
+Sarai turned to look at him. "Kim–"
 
 "I'm seventy-eight. I've been doing this since before you were born. This felt like the right note to end on." His smile was genuine. "Saving the world one more time. Can't ask for better than that."
 
